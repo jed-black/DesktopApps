@@ -5,6 +5,11 @@ import Notebox from './Notebox';
 import Sidebar from './Sidebar';
 
 const Main = () => {
+
+  const onClick = () => {
+    alert("Submitting data");
+  }
+
   return (
     <div className="page">
       <div className="sidebar">
@@ -13,7 +18,7 @@ const Main = () => {
       <div className="main">
         <Title title={"Notey"}/>
         <Notebox/>
-        <Button name={"Submit"}/>
+        <Button name={"Submit"} onClick={onClick}/>
       </div>
     </div>
   )
